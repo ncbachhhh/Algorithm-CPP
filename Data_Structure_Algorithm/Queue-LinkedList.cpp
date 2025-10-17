@@ -1,7 +1,7 @@
 //
 // Created by nguye on 10/17/2025.
 //
-// Queue LinkedList
+// Queue using Linked List
 
 #include <iostream>
 using namespace std;

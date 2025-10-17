@@ -19,4 +19,7 @@ add_executable(BinarySearch Search_Algorithm/BinarySearch.cpp)
 #Data Structure Algorithms
 add_executable(Stack Data_Structure_Algorithm/Stack.cpp)
 add_executable(Queue Data_Structure_Algorithm/Queue.cpp)
+
+#Linked List Data Structure Algorithms
 add_executable(Queue-LinkedList Data_Structure_Algorithm/Queue-LinkedList.cpp)
+add_executable(Stack-LinkedList Data_Structure_Algorithm/Stack-LinkedList.cpp)
