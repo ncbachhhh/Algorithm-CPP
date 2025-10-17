@@ -4,6 +4,8 @@ project(CPP_Algorithm)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(CPP_Algorithm main.cpp)
+add_executable(BubbleSort Sort_Algorithm/BubbleSort.cpp)
 add_executable(SelectionSort Sort_Algorithm/SelectionSort.cpp)
 add_executable(InsertionSort Sort_Algorithm/InsertionSort.cpp)
 add_executable(MergeSort Sort_Algorithm/MergeSort.cpp)
+add_executable(QuickSort Sort_Algorithm/QuickSort.cpp)
