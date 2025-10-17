@@ -15,3 +15,4 @@ add_executable(QuickSort Sort_Algorithm/QuickSort.cpp)
 #Search Algorithms
 add_executable(LinearSearch Search_Algorithm/LinearSearch.cpp)
 add_executable(BinarySearch Search_Algorithm/BinarySearch.cpp)
+add_executable(Stack Data_Structure_Algorithm/Stack.cpp)
