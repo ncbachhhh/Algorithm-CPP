@@ -23,3 +23,4 @@ add_executable(Queue Data_Structure_Algorithm/Queue.cpp)
 #Linked List Data Structure Algorithms
 add_executable(Queue-LinkedList Data_Structure_Algorithm/Queue-LinkedList.cpp)
 add_executable(Stack-LinkedList Data_Structure_Algorithm/Stack-LinkedList.cpp)
+add_executable(BinaryTree Data_Structure_Algorithm/BinaryTree.cpp)
