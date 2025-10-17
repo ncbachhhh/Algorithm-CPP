@@ -48,20 +48,55 @@ public:
     }
 };
 
+void displayMenu() {
+    cout << "========== MENU STACK ==========" << endl;
+    cout << "1. Push element onto stack" << endl;
+    cout << "2. Pop element from stack" << endl;
+    cout << "3. View top element of stack" << endl;
+    cout << "4. Check if stack is empty" << endl;
+    cout << "5. Display stack elements" << endl;
+    cout << "6. Exit" << endl;
+}
+
 int main() {
-    cout << "Created Stack." << endl;
     Stack stack;
-    cout << "Stack check is empty: " << (stack.isEmpty() ? "Yes" : "No") << endl;
-    cout << "Pushing elements 1, 2, 3 onto stack." << endl;
-    stack.push(1);
-    stack.push(2);
-    stack.push(3);
-    stack.display();
-    cout << "Stack check is empty: " << (stack.isEmpty() ? "Yes" : "No") << endl;
-    cout << "Top element: " << stack.top() << endl;
-    cout << "Popping top element." << endl;
-    stack.pop();
-    stack.display();
+    int choice;
+    bool active = true;
+    do {
+        displayMenu();
+        cout << endl << "Enter your choice: ";
+        cin >> choice;
+        switch (choice) {
+            case 1:
+                int element;
+                cout << "Enter element to push: ";
+                cin >> element;
+                stack.push(element);
+                break;
+            case 2:
+                stack.pop();
+                break;
+            case 3:
+                cout << "Top element: " << stack.top() << endl;
+                break;
+            case 4:
+                if (stack.isEmpty()) {
+                    cout << "Stack is empty." << endl;
+                } else {
+                    cout << "Stack is not empty." << endl;
+                }
+                break;
+            case 5:
+                stack.display();
+                break;
+            case 6:
+                cout << "Exiting program." << endl;
+                active = false;
+                break;
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (active);
 
     return 0;
 }
