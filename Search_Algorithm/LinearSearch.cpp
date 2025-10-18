@@ -20,7 +20,7 @@ void inputArray(vector<int>& arr) {
     }
 }
 
-int linearSearch(vector<int> arr, int key) {
+int linearSearch(const vector<int>& arr, int key) {
     for ( int i = 0; i < arr.size(); i++ ) {
         if ( arr[i] == key ) {
             return i;
@@ -38,7 +38,7 @@ int main() {
     cin >> key;
     int result = linearSearch(arr, key);
     if ( result != -1 ) {
-        cout << "Element found at index" << result << endl;
+        cout << "Element found at index " << result << endl;
     }
     else {
         cout << "Element not found" << endl;
